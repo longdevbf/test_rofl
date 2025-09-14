@@ -1,13 +1,13 @@
 services:
   mycontainer:
     build: .
-    image: "docker.io/org_name/image_name"      # Always provide FQDN image names!
+    image: "docker.io/longdevdatabase/test_rofl"      # Always provide FQDN image names!
     platform: linux/amd64
     volumes:
       - my-volume:/root/.my-volume              # Persistent per-machine storage.
       - /run/rofl-appd.sock:/run/rofl-appd.sock # appd REST API.
     environment:
-      - CONTRACT_ADDRESS=0x8d9e9704D1006b8d0BA0F58169cA8bA2de6DCD88           # See `oasis rofl secret` command.
+      - CONTRACT_ADDRESS=0x06940EC2c46a5144d47Ef8d4ea0e83AcE5d37b82           # See `oasis rofl secret` command.
       - TICKER=BTCUSDT
 
 volumes:

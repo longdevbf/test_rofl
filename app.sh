@@ -2,7 +2,7 @@
 
 while true; do
     TICKER=BTCUSDT
-    CONTRACT_ADDRESS=
+    CONTRACT_ADDRESS=0x06940EC2c46a5144d47Ef8d4ea0e83AcE5d37b82
 	# Fetch a recent price from Binance.
 	price=$(curl -s "https://www.binance.com/api/v3/ticker/price?symbol=${TICKER}" | jq '(.price | tonumber) * 1000000 | trunc')
 	if [ -z "$price" ]; then
