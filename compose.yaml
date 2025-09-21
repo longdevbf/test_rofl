@@ -7,7 +7,7 @@ services:
       - my-volume:/root/.my-volume              # Persistent per-machine storage.
       - /run/rofl-appd.sock:/run/rofl-appd.sock # appd REST API.
     environment:
-      - CONTRACT_ADDRESS=0x9f9b5a50587f5fe1E0b34c65e578f080CE884002
+      - CONTRACT_ADDRESS=0xf7e03Eed20bd0cfBf2083679066e2E92Ceb4e693
       - TICKER=ROSEUSDT
 
 volumes:

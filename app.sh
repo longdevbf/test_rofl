@@ -1,9 +1,7 @@
 #!/bin/sh
 set -x
-CONTRACT_ADDRESS=0x9f9b5a50587f5fe1E0b34c65e578f080CE884002
+CONTRACT_ADDRESS=0xf7e03Eed20bd0cfBf2083679066e2E92Ceb4e693
 TICKER=ROSEUSDT
-
-echo "[INFO] Socket OK. Starting price oracle..."
 
 while true; do
     # Fetch price from Binance
