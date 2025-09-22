@@ -17,13 +17,13 @@ artifacts:
     compose: compose.yaml
 deployments:
   default:
-    app_id: rofl1qz4cctv0k2h93nmuax3gsnhuh8hmdu0vrchf8ntw
+    app_id: rofl1qprwaekmmy62fm8d872rfr3u2c4u7u0zws8gdcs3
     network: testnet
     paratime: sapphire
     admin: myaccount
     trust_root:
-      height: 28517695
-      hash: 3d93da6a29426cfa308a1319befb91094195fe7cb7a3e310ded6177f5e1e9a1f
+      height: 28530447
+      hash: 6b57de3becce64215276cda8f46e7da9f29e3813a3f53a2af807321d6e41bf19
     policy:
       quotes:
         pcs:

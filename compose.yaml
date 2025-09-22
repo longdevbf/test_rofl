@@ -1,14 +1,14 @@
 services:
-  mycontainer:
+  oracle:
     build: .
-    image: "docker.io/longdevdatabase/test_rofl:latest"      # Always provide FQDN image names!
+    image: "docker.io/longdevdatabase/test_rofl:latest@sha256:26822772c328e48b17124a7d924c8e2ff5545aeca405d5d00795da7df436d13b"      # Always provide FQDN image names!
     platform: linux/amd64
     volumes:
-      - my-volume:/root/.my-volume              # Persistent per-machine storage.
       - /run/rofl-appd.sock:/run/rofl-appd.sock # appd REST API.
     environment:
-      - CONTRACT_ADDRESS=0xf7e03Eed20bd0cfBf2083679066e2E92Ceb4e693
-      - TICKER=ROSEUSDT
+       - CONTRACT_ADDRESS=B1320159Bba6F552b94c933eC28e1B2765C1d2Da
+      # Ticker.
+       - TICKER=ROSEUSDT
 
 volumes:
   my-volume:
